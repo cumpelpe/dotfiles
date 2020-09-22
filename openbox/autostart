@@ -1,0 +1,3 @@
+#picom -b
+polybar top &
+nitrogen --restore
