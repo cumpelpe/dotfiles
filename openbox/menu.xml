@@ -67,6 +67,9 @@
             <item label="Slideshow"> <action name="Execute">
                 <execute>slideshow</execute>
             </action> </item>
+            <item label="Zathura"> <action name="Execute">
+                <execute>zathura</execute>
+            </action> </item>
         </menu>
         <menu id="19" label="Shells">
             <item label="Alacritty"> <action name="Execute">
@@ -109,6 +112,9 @@
                     <execute>obconf</execute>
                 </action> </item>
             </menu>
+            <item label="Htop"> <action name="Execute">
+                <execute>xterm -e htop</execute>
+            </action> </item>
             <item label="NixOS Manual"> <action name="Execute">
                 <execute>nixos-help</execute>
             </action> </item>
