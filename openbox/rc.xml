@@ -207,48 +207,28 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
+    <keybind key="W-A-Left">
       <action name="SendToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Right">
+    <keybind key="W-A-Right">
       <action name="SendToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Up">
+    <keybind key="W-A-Up">
       <action name="SendToDesktop">
         <to>up</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Down">
+    <keybind key="W-A-Down">
       <action name="SendToDesktop">
         <to>down</to>
         <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-F1">
-      <action name="GoToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="GoToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="GoToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="GoToDesktop">
-        <to>4</to>
       </action>
     </keybind>
     <keybind key="W-d">
@@ -445,24 +425,6 @@
         <height>80%</height>
       </action>
       <action name="MoveToCenter"/>
-    </keybind>
-    <keybind key="W-A-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>50%</width>
-      </action>
-    </keybind>
-    <keybind key="W-A-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
-        <width>50%</width>
-      </action>
     </keybind>
   </keyboard>
   <mouse>
