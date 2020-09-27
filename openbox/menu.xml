@@ -22,6 +22,9 @@
             </action> </item>
         </menu>
         <menu id="2" label="Editors">
+            <item label="Emacs"> <action name="Execute">
+                <execute>emacs</execute>
+            </action> </item>
             <item label="Nano"> <action name="Execute">
                 <execute>xterm -e nano</execute>
             </action> </item>
@@ -38,9 +41,6 @@
         <menu id="7" label="Multimedia">
             <item label="ALSA mixer"> <action name="Execute">
                 <execute>xterm -e alsamixer</execute>
-            </action> </item>
-            <item label="Gmplayer"> <action name="Execute">
-                <execute>gmplayer</execute>
             </action> </item>
             <item label="mpv Media Player"> <action name="Execute">
                 <execute>mpv</execute>
@@ -61,6 +61,9 @@
             </action> </item>
             <item label="TkVNC"> <action name="Execute">
                 <execute>xterm -e tkvnc</execute>
+            </action> </item>
+            <item label="Vivaldi"> <action name="Execute">
+                <execute>vivaldi</execute>
             </action> </item>
         </menu>
         <menu id="3" label="Office">
@@ -86,6 +89,9 @@
             </action> </item>
             <item label="Oracle VM VirtualBox"> <action name="Execute">
                 <execute>VirtualBox</execute>
+            </action> </item>
+            <item label="ranger"> <action name="Execute">
+                <execute>xterm -e ranger</execute>
             </action> </item>
             <item label="Xterm"> <action name="Execute">
                 <execute>xterm</execute>

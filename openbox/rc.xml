@@ -30,7 +30,7 @@
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
        the top left corner -->
-    <monitor>Primary</monitor>
+    <monitor>Any</monitor>
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is, 'Primary' - only on the primary monitor -->
@@ -258,26 +258,6 @@
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -788,6 +768,7 @@
   </menu>
   <applications>
     <application name="urxvt*">
+    <decor>no</decor>
       <desktop>1</desktop>
       <size>
         <width>50%</width>
@@ -870,7 +851,7 @@
     # each rule element can be left out or set to 'default' to specify to not 
     # change that attribute of the window
 
-    <decor>yes</decor>
+    <decor>no</decor>
     # enable or disable window decorations
 
     <shade>no</shade>
