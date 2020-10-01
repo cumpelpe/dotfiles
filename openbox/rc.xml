@@ -355,12 +355,12 @@
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer -D pulse sset Master '5%+'</command>
+        <command>amixer sset Master 2%+</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer -D pulse sset Master '5%-'</command>
+        <command>amixer sset Master 2%-</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
@@ -767,7 +767,11 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application name="urxvt*">
+	<application class="*">
+		<decor>no</decor>
+	</application>
+
+	  <application name="urxvt*">
     <decor>no</decor>
       <desktop>1</desktop>
       <size>

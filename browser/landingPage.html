@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Landing Page</title>
-                  </head>
-	<link rel="stylesheet" href="./landing.css" />
+    <link rel="stylesheet" href="./landing.css" />
+  </head>
   <body>
-    <h1>
-      Landing Page
-    </h1>
-    <h2>
-    <time id="realtime"></time>
-    </h2>
     <div id="app">
-
-	<ruby>
- ♥ <rt> Heart <rt lang=fr> Cœur </rt>
- ☘ <rt> Shamrock <rt lang=fr> Trèfle </rt>
- ✶ <rt> Star <rt lang=fr> Étoile </rt>
-</ruby>
-<ruby lang="ja">編集者<rt lang="en">editor</ruby>
-
-  </div>
-  <script>
-    const timer = document.querySelector("#realtime");
-
-    let interval = setInterval(()=>{
-        const now = new Date();
-        timer.innerText = `${now.getDate()}.${now.getMonth() + 1}. ${now.getFullYear()}    ${now.getHours()}:${now.getMinutes()}`;
-    }, 1000);
-  </script>
+      <div id="leftSide">
+        <h1>Landing Page</h1>
+        <h2><time id="realtime"></time></h2>
+        <div id="quote">
+          <b id="quote-author"></b><br />
+          <p><i id="quote-text"></i></p>
+        </div>
+        <div id="links"></div>
+      </div>
+      <div id="corona"></div>
+    </div>
+    <script src="./landing.js"></script>
   </body>
 </html>
