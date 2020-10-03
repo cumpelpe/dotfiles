@@ -16,9 +16,11 @@
   --green: #a3be8c;
   --magenta: #b48ead;
 }
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 * {
   box-sizing: border-box;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 body {
