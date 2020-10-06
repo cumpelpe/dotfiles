@@ -38,8 +38,6 @@ DB.version(2).stores({
 });
 const getQuote = async () => {
   const now = new Date();
-  console.log( await DB.quote.toArray() )	
-  
   if ( await DB.quote.get(dateCode) ) return await DB.quote.get(dateCode);
   console.log("NotInDB");
   const URL = "https://quotes.rest/qod?language=en";
@@ -91,7 +89,10 @@ const getCoronaData = async (divInto) => {
     }
     get name() {
       if (this._name === "") return this._index;
-      else return this._name;
+      return this._name;
+    }
+    set name(newName) {
+      this._name = newName;	
     }
     get index() {
       return this._index;
@@ -121,12 +122,16 @@ const getCoronaData = async (divInto) => {
   ]) {
     const trow = tr();
     table.appendChild(trow);
-    const txt = data["data"][0][i.index] == 0 ? yesterdayCorona[i.index] : data["data"][0][i.index];
-    if( data["data"][0][i.index] == 0 )
-	i.name = i.name.replace( /today/i, 'yesterday' );
+    let txt;
+    if ( data["data"][0][i.index] == 0 ){
+      txt = yesterdayCorona[i.index];
+      i.name = i.name.replace( /today/i, 'yesterday' );
+    }
+    else
+      txt = data["data"][0][i.index];
     putData[i.index] = data["data"][0][i.index];
     const tdata = td(),
-      thead = th();
+    thead = th();
     tdata.innerText = txt;
     thead.innerText = i.name.capitalize().splitCamel();
     trow.appendChild(thead);

@@ -332,6 +332,27 @@
         <command>rofi -show window -opacity 90</command>
       </action>
     </keybind>
+    <keybind key="W-S-s"> <!-- Prompts for selection of rectangle on the screen and copies it as an image to clipboard -->
+	    <action name="Execute">
+		<command>
+			xterm -e 
+				'
+				 select answer in "Ready" ; do
+				 	case $answer in
+						Ready ) break;;
+					esac
+				 done
+				 maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i ;
+				 echo "q or Q to delete the image from clipboard" ;
+				 select q in "Del" ; do
+					case $q in
+						Del ) exit;;
+					esac
+				done
+			'
+		</command>
+	    </action>
+    </keybind>
     <!-- Custom Keybindings for music control -->
     <keybind key="XF86AudioStop">
       <action name="Execute">
