@@ -1,0 +1,19 @@
+---
+Language: Cpp
+BasedOnStyle: WebKit
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros: true
+AlignEscapedNewlines: true
+AlwaysBreakBeforeMultilineStrings: true
+Cpp11BracedListStyle: false
+FixNamespaceComments: true
+IncludeBlocks: Regroup
+    # SpaceAroundPointerQualifiers: After
+PointerAlignment: Right
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: true
+SpacesInConditionalStatement: true
+SpacesInContainerLiterals: true
+SpacesInParentheses: true
+Standard: Latest

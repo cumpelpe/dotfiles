@@ -4,40 +4,39 @@ font = Hack Nerd Font Mono 12
 [colors]
 
 # special
-foreground      = #888888
-foreground_bold = #888888
-cursor          = #888888
-background      = #151515
+foreground      = #93a1a1
+foreground_bold = #93a1a1
+cursor          = #93a1a1
+background      = #002b36
 
 # black
-color0  = #292929
-color8  = #525252
+color0  = #002b36
+color8  = #657b83
 
 # red
-color1  = #cf6a4c
-color9  = #ff9d80
+color1  = #dc322f
+color9  = #dc322f
 
 # green
-color2  = #19cb00
-color10 = #23fd00
+color2  = #859900
+color10 = #859900
 
 # yellow
-color3  = #fad07a
-color11 = #ffefbf
+color3  = #b58900
+color11 = #b58900
 
 # blue
-color4  = #8197bf
-color12 = #accaff
+color4  = #268bd2
+color12 = #268bd2
 
 # magenta
-color5  = #8787af
-color13 = #c4c4ff
+color5  = #6c71c4
+color13 = #6c71c4
 
 # cyan
-color6  = #668799
-color14 = #80bfaf
+color6  = #2aa198
+color14 = #2aa198
 
 # white
-color7  = #888888
-color15 = #e8e8d3
-
+color7  = #93a1a1
+color15 = #fdf6e3
