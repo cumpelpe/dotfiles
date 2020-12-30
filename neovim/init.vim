@@ -38,7 +38,7 @@ let g:neosolarized_visibility = "high"
 let g:neosolarized_bold = 1
 let g:neosolarized_underline = 1
 let g:neosolarized_italic = 1
-let g:neosolarized_termBoldAsBright = 1
+let g:neosolarized_termBoldAsBright = 0
 set background=dark
 
 " Airline Settings
@@ -68,7 +68,8 @@ call plug#end()
 " Set colorscheme
 colorscheme NeoSolarized
 
-"NERDTree config
+" NERDTree config
+" <C-t> = ctrl-t
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
