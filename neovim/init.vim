@@ -1,6 +1,8 @@
-
 " Dont try to be vi compatible
 set nocompatible
+
+" Enable hidden buffers
+set hidden
 
 " Relative Linenumbers
 set nu rnu
@@ -12,7 +14,7 @@ set mouse=a
 set termguicolors
 
 " Settings for vim-polyglot
-let g:polyglot_disabled = ['']
+let g:polyglot_disabled = ['markdown']
 
 " Autocompleters for coc.nvim
 let g:coc_global_extensions = [
@@ -54,6 +56,9 @@ Plug 'kshenoy/vim-signature'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
+Plug 'junegunn/goyo.vim'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 " Set colorscheme
