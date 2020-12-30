@@ -3,6 +3,7 @@ set nocompatible
 
 " Enable hidden buffers
 set hidden
+
 " Relative Linenumbers
 set nu rnu
 
@@ -44,6 +45,9 @@ set background=dark
 let g:airline_powerline_fonts = 1
 let g:airline_theme='violet'
 
+" Goyo settings
+let g:goyo_width = "70%"
+
 " Manage plugins
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'powerline/fonts'
@@ -57,7 +61,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'gko/vim-coloresque'
 call plug#end()
 
 " Set colorscheme
@@ -67,3 +72,7 @@ colorscheme NeoSolarized
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" Markdown settings
+autocmd bufreadpre *.md setlocal conceallevel=2
+
