@@ -3,7 +3,6 @@ set nocompatible
 
 " Enable hidden buffers
 set hidden
-
 " Relative Linenumbers
 set nu rnu
 
