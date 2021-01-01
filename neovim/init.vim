@@ -4,6 +4,10 @@ set nocompatible
 " Enable hidden buffers
 set hidden
 
+" Sane settings
+filetype plugin on
+syntax on
+
 " Relative Linenumbers
 set nu rnu
 
@@ -66,6 +70,8 @@ Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'gko/vim-coloresque'
 Plug 'rhysd/vim-clang-format'
 Plug 'luochen1990/rainbow'
+Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-sensible'
 call plug#end()
 
 " Set rainbow parentheses
@@ -87,3 +93,13 @@ autocmd bufreadpre *.md setlocal nofoldenable
 " Neovide settings
 let g:neovide_cursor_vfx_mode         = "sonicboom"
 let g:neovide_cursor_animation_length = 0.23
+
+" VimWiki settings
+let wiki = {}
+let g:vimwiki_list = [{'path': '$HOME/vimwiki', 'template_path': '$HOME/vimwiki_tpl'}]
+
+" Default <leader> is '\'
+" Edit config
+" <S-s> = Shift-s
+nnoremap <leader><S-s> :Ex $HOME/dotfiles<CR>
+nnoremap <leader>s     :e $HOME/dotfiles/neovim/init.vim<CR>
