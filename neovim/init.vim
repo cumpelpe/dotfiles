@@ -39,7 +39,8 @@ let g:neosolarized_bold             = 1
 let g:neosolarized_underline        = 1
 let g:neosolarized_italic           = 1
 let g:neosolarized_termBoldAsBright = 0
-set background                      = dark
+
+set background=dark
 
 " Airline Settings
 let g:airline_powerline_fonts = 1

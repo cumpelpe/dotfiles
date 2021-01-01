@@ -99,7 +99,7 @@ If **e,E,c** don't work, edit values '`mimeopen -n %s`' of ~/.config/wyeb./main.
 or change mimeopen's database by running '<code>mimeopen <i>file/directory</i></code>' in terminals.
 
 For other keys, see **[help](wyeb:help)** assigned '**`:`**'.
-Since wyeb is inspired by **[dwb](https://wiki.archlinux.org/index.php/dwb)**
+Since wyeb is inspired by _dead link_ **[dwb](https://wiki.archlinux.org/index.php/dwb)**
 and luakit, usage is similar to them.
 
 ---
