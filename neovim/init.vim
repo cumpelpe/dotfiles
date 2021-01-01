@@ -44,7 +44,7 @@ set background=dark
 
 " Airline Settings
 let g:airline_powerline_fonts = 1
-let g:airline_theme           ='violet'
+let g:airline_theme           = 'violet'
 
 " Goyo settings
 let g:goyo_width = "70%"
@@ -69,7 +69,7 @@ Plug 'luochen1990/rainbow'
 call plug#end()
 
 " Set rainbow parentheses
-let g:rainbow_active = 1 
+let g:rainbow_active = 1
 
 " Set colorscheme
 colorscheme NeoSolarized
