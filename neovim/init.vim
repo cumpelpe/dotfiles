@@ -17,6 +17,9 @@ set mouse=a
 " Truecolor
 set termguicolors
 
+" Tab to spaces
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
 " Settings for vim-polyglot
 let g:polyglot_disabled = ['markdown']
 
@@ -69,16 +72,36 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'gko/vim-coloresque'
 Plug 'rhysd/vim-clang-format'
-Plug 'luochen1990/rainbow'
+Plug 'luochen1990/rainbow', { 'for': 'scheme' }
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-sensible'
+Plug 'sainnhe/edge'
+Plug 'dracula/vim', {'as': 'dracula' } 
+Plug 'liuchengxu/space-vim-dark'
+Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'itchyny/landscape.vim'
+Plug 'soli/prolog-vim'
+Plug 'metakirby5/codi.vim'
 call plug#end()
 
 " Set rainbow parentheses
 let g:rainbow_active = 1
 
 " Set colorscheme
-colorscheme NeoSolarized
+" colorscheme NeoSolarized
+"colorscheme dracula 
+
+"let g:space_vim_dark_background = 233
+
+colorscheme dracula
+
+  "color space-vim-dark
+	"hi Comment cterm=italic gui=italic 
+  "hi Normal ctermbg=NONE guibg=NONE
+  "hi LineNr ctermbg=NONE guibg=NONE
+  "hi Function cterm=italic gui=italic gui=bold
+  "hi Function guifg=#b09aff 
+	"hi Identifier guibg=red
 
 " NERDTree config
 " <C-t> = ctrl-t

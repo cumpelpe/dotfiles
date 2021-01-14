@@ -1,0 +1,11 @@
+import:
+  - /home/petr/dotfiles/alacritty/dracula.yml
+
+font:
+  size: 11
+  normal:
+    family: Hasklig
+  bold:
+    family: Hasklig 
+  italic:
+    family: Hasklig
