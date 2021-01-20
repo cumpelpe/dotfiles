@@ -72,7 +72,7 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'gko/vim-coloresque'
 Plug 'rhysd/vim-clang-format'
-Plug 'luochen1990/rainbow', { 'for': 'scheme' }
+Plug 'luochen1990/rainbow', { 'for': ['scheme', 'racket', 'lisp'] }
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-sensible'
 Plug 'sainnhe/edge'
