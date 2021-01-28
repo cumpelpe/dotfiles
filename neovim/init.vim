@@ -14,8 +14,15 @@ set nu rnu
 " Mouse support
 set mouse=a
 
+let g:norxvt = $TERM !~ "rxvt*"
+let g:rxvt = $TERM =~ "rxvt*"
+
 " Truecolor
-set termguicolors
+if exists("$TERM")
+	if g:norxvt " don't try Truecolor with rxvt
+		set termguicolors
+	end
+end
 
 " Tab to spaces
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
@@ -82,18 +89,22 @@ Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'itchyny/landscape.vim'
 Plug 'soli/prolog-vim'
 Plug 'metakirby5/codi.vim'
+Plug 'ParamagicDev/vim-medic_chalk'
+Plug 'Mizux/vim-colorschemes'
+Plug 'atahabaki/archman-vim'
 call plug#end()
 
 " Set rainbow parentheses
 let g:rainbow_active = 1
-
 " Set colorscheme
-" colorscheme NeoSolarized
-"colorscheme dracula 
 
-"let g:space_vim_dark_background = 233
-
-colorscheme dracula
+if g:norxvt
+	colorscheme dracula
+else
+	"let g:space_vim_dark_background = 233
+	"colorscheme space-vim-dark
+	colorscheme archman
+end
 
   "color space-vim-dark
 	"hi Comment cterm=italic gui=italic 
@@ -126,3 +137,14 @@ let g:vimwiki_list = [{'path': '$HOME/vimwiki', 'template_path': '$HOME/vimwiki_
 " <S-s> = Shift-s
 nnoremap <leader><S-s> :Ex $HOME/dotfiles<CR>
 nnoremap <leader>s     :e $HOME/dotfiles/neovim/init.vim<CR>
+
+" Save as root
+command! -nargs=0 Sw w !sudo -S tee % > /dev/null
+
+if g:rxvt
+	"so /home/petr/dotfiles/neovim/ligature_plugins/cpp.vim
+	so /home/petr/dotfiles/neovim/ligature_plugins/haskell.vim
+	so /home/petr/dotfiles/neovim/ligature_plugins/ocaml.vim
+	"so /home/petr/dotfiles/neovim/ligature_plugins/python.vim
+	"so /home/petr/dotfiles/neovim/ligature_plugins/rust.vim
+end
