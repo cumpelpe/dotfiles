@@ -83,7 +83,7 @@ Plug 'luochen1990/rainbow', { 'for': ['scheme', 'racket', 'lisp'] }
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-sensible'
 Plug 'sainnhe/edge'
-Plug 'dracula/vim', {'as': 'dracula' } 
+Plug 'dracula/vim', {'as': 'dracula' }
 Plug 'liuchengxu/space-vim-dark'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'itchyny/landscape.vim'
@@ -106,13 +106,13 @@ else
 	colorscheme archman
 end
 
-  "color space-vim-dark
-	"hi Comment cterm=italic gui=italic 
-  "hi Normal ctermbg=NONE guibg=NONE
-  "hi LineNr ctermbg=NONE guibg=NONE
-  "hi Function cterm=italic gui=italic gui=bold
-  "hi Function guifg=#b09aff 
-	"hi Identifier guibg=red
+"color space-vim-dark
+"hi Comment cterm=italic gui=italic
+"hi Normal ctermbg=NONE guibg=NONE
+"hi LineNr ctermbg=NONE guibg=NONE
+"hi Function cterm=italic gui=italic gui=bold
+"hi Function guifg=#b09aff
+"hi Identifier guibg=red
 
 " NERDTree config
 " <C-t> = ctrl-t
@@ -125,8 +125,6 @@ autocmd bufreadpre *.md setlocal conceallevel=2
 autocmd bufreadpre *.md setlocal nofoldenable
 
 " Neovide settings
-let g:neovide_cursor_vfx_mode         = "sonicboom"
-let g:neovide_cursor_animation_length = 0.23
 
 " VimWiki settings
 let wiki = {}

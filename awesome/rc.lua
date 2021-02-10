@@ -48,8 +48,8 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "redhalo/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "uxterm"
-editor = "vim" or os.getenv("EDITOR") or "vim"
+terminal = "alacritty" or os.getenv("TERMINAL") or "uxterm" or "urxvt" or "xterm" or "st" or "rxvt"
+editor = "nvim" or os.getenv("EDITOR") or "vim" or "micro" or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -61,8 +61,8 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
+    awful.layout.suit.floating,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
@@ -456,7 +456,10 @@ awful.rules.rules = {
                      placement = awful.placement.no_overlap+awful.placement.no_offscreen
      }
     },
-
+    -- Add titlebars to normal clients and dialogs
+    { rule_any = {type = { "normal", "dialog" }
+      }, properties = { titlebars_enabled = true }
+    },
     -- Floating clients.
     { rule_any = {
         instance = {
@@ -486,12 +489,9 @@ awful.rules.rules = {
           "ConfigManager",  -- Thunderbird's about:config.
           "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
         }
-      }, properties = { floating = true }},
+      }, properties = { floating = true, titlebars_enabled = false }},
 
-    -- Add titlebars to normal clients and dialogs
-    { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
-    },
+    
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
