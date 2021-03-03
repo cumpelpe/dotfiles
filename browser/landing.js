@@ -25,11 +25,13 @@ const dateCodeOffset = function (offset) {
   return `${now.getFullYear()}${now.getDate()}${now.getMonth()}`;
 }
 const links = [
+  { name: "Kačer",    url: "https://www.duckduckgo.com"         },
   { name: "Youtube",  url: "https://www.youtube.com"            },
   { name: "Courses",  url: "https://courses.fit.cvut.cz"        },
   { name: "Fittable", url: "https://timetable.fit.cvut.cz/new/" },
   { name: "Marast",   url: "https://marast.fit.cvut.cz/"        },
   { name: "Progtest", url: "https://progtest.fit.cvut.cz/"      },
+  { name: "KOS",      url: "https://kos.cvut.cz/"               },
 ];
 const DB = new Dexie("quote");
 DB.version(2).stores({

@@ -92,6 +92,12 @@ Plug 'metakirby5/codi.vim'
 Plug 'ParamagicDev/vim-medic_chalk'
 Plug 'Mizux/vim-colorschemes'
 Plug 'atahabaki/archman-vim'
+Plug 'gkjgh/cobalt'
+Plug 'herrbischoff/cobalt2.vim'
+Plug 'afgomez/better-cobalt.vim'
+Plug 'zeis/vim-kolor'
+Plug 'https://github.com/joshdick/onedark.vim.git'
+Plug 'rakr/vim-one'
 call plug#end()
 
 " Set rainbow parentheses
@@ -103,7 +109,9 @@ if g:norxvt
 else
 	"let g:space_vim_dark_background = 233
 	"colorscheme space-vim-dark
-	colorscheme archman
+	"colorscheme archman
+	"colorscheme space-vim-dark
+	colorscheme better-cobalt
 end
 
 "color space-vim-dark
@@ -139,10 +147,3 @@ nnoremap <leader>s     :e $HOME/dotfiles/neovim/init.vim<CR>
 " Save as root
 command! -nargs=0 Sw w !sudo -S tee % > /dev/null
 
-if g:rxvt
-	"so /home/petr/dotfiles/neovim/ligature_plugins/cpp.vim
-	so /home/petr/dotfiles/neovim/ligature_plugins/haskell.vim
-	so /home/petr/dotfiles/neovim/ligature_plugins/ocaml.vim
-	"so /home/petr/dotfiles/neovim/ligature_plugins/python.vim
-	"so /home/petr/dotfiles/neovim/ligature_plugins/rust.vim
-end

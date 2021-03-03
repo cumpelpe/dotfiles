@@ -48,7 +48,7 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "redhalo/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "alacritty" or os.getenv("TERMINAL") or "uxterm" or "urxvt" or "xterm" or "st" or "rxvt"
+terminal = os.getenv("TERMINAL") or "uxterm" or "urxvt" or "xterm" or "st" or "rxvt"
 editor = "nvim" or os.getenv("EDITOR") or "vim" or "micro" or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -167,7 +167,6 @@ screen.connect_signal("property::geometry", set_wallpaper)
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
     set_wallpaper(s)
-
     -- Each screen has its own tag table.
     awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 

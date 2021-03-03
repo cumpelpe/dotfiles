@@ -20,6 +20,7 @@ conky.text = [[
 ${voffset 8}$color2${font FiraCode Nerd Font:size=16}${time %A}$font\
 ${voffset -8}$alignr$color${font Bitstream Vera Sans:size=38}${time %e}$font
 $color${voffset -30}$color${font Bitstream Vera Sans:size=18}${time %b}$font\
+$color${voffset 5}$color${font Bitstream Vera Sans:size=18}${time %H:%M}$font\
 ${voffset -3} $color${font Bitstream Vera Sans:size=20}${time %Y}$font$color2$hr
 #
 ${voffset 20}${goto 40}${color}CPU${font Bitstream Vera Sans:bold:size=8}$alignr$cpu%
