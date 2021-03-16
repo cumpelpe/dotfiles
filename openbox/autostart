@@ -1,4 +1,4 @@
-#picom -b
+picom -b --experimental-backends --backend glx
 polybar top &
 polybar right &
 nitrogen --restore

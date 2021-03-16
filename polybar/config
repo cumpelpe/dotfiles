@@ -52,8 +52,6 @@ format-offset =
 ; background = ${colors.background}
 ; foreground = ${colors.foreground}
 
-; ...
-
 ; Nord theme ============
 background = #772F343F
 foreground = #f3f4f5
@@ -128,11 +126,11 @@ font-2 = NotoMono-Regular: size=10;0
 modules-left =  
 modules-center = xwindow
 modules-right = polywins 
+wm-restack = bspwm
 
 [bar/top]
+wm-restack = bspwm
 monitor = ${env:MONITOR:DVI-I-0}
-;monitor = ${env:MONITOR:HDMI-0}
-;monitor-fallback = HDMI1
 width = 98%
 height = 30
 offset-x = 1%
@@ -141,10 +139,8 @@ radius = 5.8
 fixed-center = true
 bottom = false
 separator = |
-
 background = ${colors.background}
 foreground = ${colors.foreground}
-
 line-size = 2
 line-color = #f00
 
