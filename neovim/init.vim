@@ -107,20 +107,8 @@ let g:rainbow_active = 1
 if g:norxvt
 	colorscheme dracula
 else
-	"let g:space_vim_dark_background = 233
-	"colorscheme space-vim-dark
-	"colorscheme archman
-	"colorscheme space-vim-dark
 	colorscheme better-cobalt
 end
-
-"color space-vim-dark
-"hi Comment cterm=italic gui=italic
-"hi Normal ctermbg=NONE guibg=NONE
-"hi LineNr ctermbg=NONE guibg=NONE
-"hi Function cterm=italic gui=italic gui=bold
-"hi Function guifg=#b09aff
-"hi Identifier guibg=red
 
 " NERDTree config
 " <C-t> = ctrl-t
@@ -131,8 +119,6 @@ nnoremap <C-f>     :NERDTreeFind<CR>
 " Markdown settings
 autocmd bufreadpre *.md setlocal conceallevel=2
 autocmd bufreadpre *.md setlocal nofoldenable
-
-" Neovide settings
 
 " VimWiki settings
 let wiki = {}

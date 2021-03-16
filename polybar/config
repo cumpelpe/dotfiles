@@ -279,7 +279,7 @@ tray-background = ${colors.background}
 
 [module/polywins]
 type = custom/script
-exec = "$HOME/.config/polybar/scripts/polywins.sh"
+exec = "$HOME/dotfiles/polybar/scripts/polywins.sh"
 format = <label>
 label = %output%
 label-padding = 1
