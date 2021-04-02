@@ -98,6 +98,8 @@ Plug 'afgomez/better-cobalt.vim'
 Plug 'zeis/vim-kolor'
 Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'rakr/vim-one'
+Plug 'https://github.com/ayu-theme/ayu-vim.git'
+Plug 'PontusPersson/pddl.vim'
 call plug#end()
 
 " Set rainbow parentheses
