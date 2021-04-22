@@ -1,3 +1,6 @@
+" File              : init.vim
+" Date              : 12.04.2021
+" Last Modified Date: 12.04.2021
 " Dont try to be vi compatible
 set nocompatible
 
@@ -100,11 +103,16 @@ Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'rakr/vim-one'
 Plug 'https://github.com/ayu-theme/ayu-vim.git'
 Plug 'PontusPersson/pddl.vim'
+Plug 'https://github.com/alpertuna/vim-header'
 call plug#end()
 
 " Set rainbow parentheses
 let g:rainbow_active = 1
 " Set colorscheme
+
+let g:header_field_author = 'Petr Čumpelík'
+let g:header_field_author_email = 'cumpepe1@fit.cvut.cz'
+map <F4> :AddHeader<CR>
 
 if g:norxvt
 	colorscheme dracula

@@ -4,4 +4,4 @@ import:
 font:
   size: 12
   normal:
-    family: mononoki Nerd Font
+    family: terminessTTF Nerd Font
