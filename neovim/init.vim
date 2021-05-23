@@ -1,4 +1,9 @@
 " File              : init.vim
+" Author            : Petr Čumpelík <cumpepe1@fit.cvut.cz>
+" Date              : 11.05.2021
+" Last Modified Date: 11.05.2021
+" Last Modified By  : Petr Čumpelík <cumpepe1@fit.cvut.cz>
+" File              : init.vim
 " Date              : 12.04.2021
 " Last Modified Date: 12.04.2021
 " Dont try to be vi compatible
@@ -143,3 +148,4 @@ nnoremap <leader>s     :e $HOME/dotfiles/neovim/init.vim<CR>
 " Save as root
 command! -nargs=0 Sw w !sudo -S tee % > /dev/null
 
+nnoremap <silent> <leader>h :call CocActionAsync('doHover')<cr>
