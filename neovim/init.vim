@@ -1,7 +1,8 @@
 " File              : init.vim
 " Author            : Petr Čumpelík <cumpepe1@fit.cvut.cz>
-" Date              : 11.05.2021
-" Last Modified Date: 11.05.2021
+" Date              : 03.06.2021
+" Last Modified Date: 03.06.2021
+" Last Modified By  : Petr Čumpelík <cumpepe1@fit.cvut.cz>
 " Last Modified By  : Petr Čumpelík <cumpepe1@fit.cvut.cz>
 " File              : init.vim
 " Date              : 12.04.2021
@@ -66,7 +67,8 @@ set background=dark
 
 " Airline Settings
 let g:airline_powerline_fonts = 1
-let g:airline_theme           = 'violet'
+" let g:airline_theme           = 'violet'
+let g:airline_theme           = 'deus'
 
 " Goyo settings
 let g:goyo_width = "70%"

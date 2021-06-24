@@ -1,8 +1,13 @@
+# File              : .clang-format
+# Author            : Petr Čumpelík <cumpepe1@fit.cvut.cz>
+# Date              : 24.05.2021
+# Last Modified Date: 10.06.2021
+# Last Modified By  : Petr Čumpelík <cumpepe1@fit.cvut.cz>
 ---
 Language:                                       Cpp
 BasedOnStyle:                                   WebKit
 AccessModifierOffset:                           -2
-AlignAfterOpenBracket:                          Align
+AlignAfterOpenBracket:                          AlwaysBreak
 AlignConsecutiveMacros:                         true
 AlignConsecutiveAssignments:                    true
 AlignConsecutiveBitFields:                      true
@@ -13,7 +18,7 @@ AlignTrailingComments:                          true
 AllowAllArgumentsOnNextLine:                    false
 AllowAllConstructorInitializersOnNextLine:      false
 AllowAllParametersOfDeclarationOnNextLine:      false
-AllowShortEnumsOnASingleLine:                   true
+AllowShortEnumsOnASingleLine:                   false
 AllowShortBlocksOnASingleLine:                  Never
 AllowShortCaseLabelsOnASingleLine:              false
 AllowShortFunctionsOnASingleLine:               All
@@ -24,8 +29,8 @@ AlwaysBreakAfterDefinitionReturnType:           None
 AlwaysBreakAfterReturnType:                     None
 AlwaysBreakBeforeMultilineStrings:              false
 AlwaysBreakTemplateDeclarations:                MultiLine
-BinPackArguments:                               true
-BinPackParameters:                              true
+BinPackArguments:                               false
+BinPackParameters:                              false
 BraceWrapping:
   AfterCaseLabel:                               false
   AfterClass:                                   false
@@ -57,7 +62,7 @@ BreakStringLiterals:                            false
 ColumnLimit:                                    120
 CommentPragmas:                                 '^ IWYU pragma:'
 CompactNamespaces:                              false
-ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
 ConstructorInitializerIndentWidth:              4
 ContinuationIndentWidth:                        4
 Cpp11BracedListStyle:                           false
