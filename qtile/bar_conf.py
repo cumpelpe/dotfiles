@@ -32,11 +32,13 @@ def init_widgets_list():
                        foreground = colors[2],
                        background = colors[0]
                        ),
-              #widget.Image(
-              #         filename = "~/.config/qtile/icons/python-white.png",
-              #         scale = "False",
-              #         mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm)}
-              #         ),
+              widget.Image(
+                       foreground = colors[2],
+                       background = colors[0],
+                       filename = "~/dotfiles/qtile/icons/python-logo.png",
+                       scale = "False",
+                       mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm)}
+                       ),
              widget.Sep(
                        linewidth = 0,
                        padding = 6,
@@ -44,7 +46,7 @@ def init_widgets_list():
                        background = colors[0]
                        ),
               widget.GroupBox(
-                       font = "Ubuntu Bold",
+                       font = "Fira Sans, Fira Sans Book",
                        fontsize = 9,
                        margin_y = 3,
                        margin_x = 0,
@@ -117,6 +119,10 @@ def init_widgets_list():
                        foreground = colors[2],
                        configured_keyboards = ['us', 'cz'],
                   mouse_callbacks = {'Button1': lambda: lazy.widget["keyboardlayout"].next_keyboard()},
+              ),
+              widget.CapsNumLockIndicator(
+                       background = colors[5],
+                       foreground = colors[2],
               ),
               widget.TextBox(
                        text='',

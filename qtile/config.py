@@ -127,7 +127,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='sans',
+    font='GohuFont Powerline',
     fontsize=12,
     padding=3,
 )

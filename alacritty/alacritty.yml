@@ -1,7 +1,13 @@
+# File              : alacritty.yml
+# Author            : Petr Čumpelík <cumpepe1@fit.cvut.cz>
+# Date              : 24.06.2021
+# Last Modified Date: 24.06.2021
+# Last Modified By  : Petr Čumpelík <cumpepe1@fit.cvut.cz>
 import:
   - /home/petr/dotfiles/alacritty/dracula.yml
 
 font:
-  size: 12
+  size: 10
   normal:
-    family: terminessTTF Nerd Font
+    #family: terminessTTF Nerd Font
+    family: Hermit
