@@ -55,7 +55,8 @@ vim.o.inccommand = 'nosplit'
 vim.o.hlsearch = false
 
 --Make line numbers default
-vim.wo.number = true
+--vim.wo.number = true
+vim.wo.rnu = true
 
 --Do not save when switching buffers (note: this is now a default on master)
 vim.o.hidden = true
@@ -249,7 +250,7 @@ end
 
 -- Example custom server
 local sumneko_root_path = vim.fn.getenv 'HOME' .. '/.local/bin/sumneko_lua' -- Change to your sumneko root installation
-local sumneko_binary = sumneko_root_path .. '/bin/Linux/lua-language-server'
+local sumneko_binary = '/usr/bin/lua-lsp'
 
 -- Make runtime files discoverable to the server
 local runtime_path = vim.split(package.path, ';')

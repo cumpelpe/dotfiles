@@ -75,12 +75,16 @@ set background=dark
 let g:airline_powerline_fonts = 1
 " let g:airline_theme           = 'violet'
 " let g:airline_theme           = 'deus'
-let g:airline_theme           = 'ayu'
+let g:airline_theme           = 'dracula'
 
 " Goyo settings
 let g:goyo_width = "70%"
 
-" Manage plugins
+if has("gui_running") || exists("neovide")
+else
+    let g:dracula_colorterm = 0
+endif
+    " Manage plugins
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -215,3 +219,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
+
+set guifont=FiraCode\ Nerd\ Font\ Mono
+
